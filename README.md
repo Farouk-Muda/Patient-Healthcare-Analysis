@@ -35,8 +35,7 @@ Data cleaning and preparation were performed to ensure the dataset was ready for
 
 ## Key Findings
 Some of the key insights derived from the analysis include:
-- Patient Outcomes: Identified the most effective treatment methods for various conditions.
-- Hospital Performance: Highlighted the top-performing hospitals based on treatment success rates and patient satisfaction.
+- Identified the most prevalent disease conditions, frequently prescribed medication and distribution of test results.
 - Demographic Trends: Uncovered trends in patient outcomes based on age, gender, and other demographics.
 - Resource Utilization: Provided insights into how hospitals can optimize their resources for better patient care.
 
