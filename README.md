@@ -11,8 +11,10 @@ The primary objectives of this project are:
 - To create interactive visualizations in Excel that provide insights into the data.
 - To generate a comprehensive report that highlights key trends, insights, and recommendations for healthcare improvements.
 
-## Tool
--MS Excel
+## Tools and Technologies
+- Microsoft Excel: Primary tool used for data cleaning, analysis, and visualization.
+- Excel Features: Utilized pivot tables, conditional formatting, VLOOKUP, and other advanced Excel functions.
+- Data Visualization: Created charts and graphs using Excel's built-in charting tools
 
 ## Dataset
 - Source: This is a dummy dataset from kaggle [Healthcare Dataset](https://www.kaggle.com/datasets/prasad22/healthcare-dataset) contains information on various healthcare metrics, including patient demographics, treatment outcomes, hospital efficiency, and more.
@@ -25,22 +27,30 @@ Data cleaning and preparation were performed to ensure the dataset was ready for
 - Handling Missing Values: I filtered columns to visually inspect rows with empty cells.
 - Data Normalization: I ensured all ages are positive integers, within valid age range, standard gender labels, normalize blood types to standardized values, dates follow the same format. 
 - Outlier Detection: I searched for extremely high or low values in columns like age and billing amount.
-- I created two columns Length Of Stay by subtracting Admission date from Discharge date using this function ```=M2-F2```, and Age Groups using ```=IF(A2<13, "Below 13",
-   IF(A2<=19, "13-19",
-   IF(A2<=29, "20-29",
-   IF(A2<=39, "30-39",
-   IF(A2<=49, "40-49",
-   IF(A2<=59, "50-59",
-   IF(A2<=69, "60-69",
-   IF(A2<=79, "70-79", "Above 80"))))))))```.
-
+- I created two columns Length Of Stay and Age Groups to Calculate the number of days a patient stayed in the hospital and categorize
+ patients into age groups for analysis respectively.
+  
 ## Key Findings
 Some of the key insights derived from the analysis include:
-- Identified the most prevalent disease conditions, frequently prescribed medication and distribution of test results.
-- Demographic Trends: Uncovered trends in patient outcomes based on age, gender, and other demographics.
-- Resource Utilization: Provided insights into how hospitals can optimize their resources for better patient care.
+- The average age of patients is **52 years**.
+- The male and female patient population is nearly balanced at **27.5K each**.
+- The three primary types of admissions are nearly equally distributed: **Elective (18.47K), Emergency (18.39K)**, and **Urgent (18.10K)**.
+- **Elective admissions** have the highest length of stay approximately 6K.
+- Admissions have shown a sharp decline towards the end of the timeline.
+- **Cigna** contributes the highest revenue at **€284.34M**, followed closely by **Medicare (€282.91M)**.
+- The average billing amount is **€25,545**, which indicates the cost burden on patients or insurers.
+- The leading conditions are **Arthritis, Diabetes, Hypertension, Obesity,** and **Cancer**, each affecting approximately **9.2K** patients.
+- The most frequently prescribed medications are **Lipitor (11.04K)** and **Ibuprofen (11.02K)**.
+- The doctor with the highest number of patients is **Michael Smith (27 patients)**, followed by **John Smith (22 patients)**.
+- The age groups **40-49** and **50-59** are predominant, followed by **60-69**.
+- The dataset provides the distribution of blood groups with significant representation across all types.
+- Results are distributed among **Normal (18.33K)**, **Abnormal (18.44K)**, and **Inconclusive (18.20K**).
 
-## Tools and Technologies
-- Microsoft Excel: Primary tool used for data cleaning, analysis, and visualization.
-- Excel Features: Utilized pivot tables, conditional formatting, VLOOKUP, and other advanced Excel functions.
-- Data Visualization: Created charts and graphs using Excel's built-in charting tools
+## Recommendations for stakeholders
+- Focus resources on managing top medical conditions like Diabetes and Hypertension.
+- Develop strategies to reduce the length of stay for elective cases.
+- Monitor declining admission rates and identify the underlying causes.
+- Collaborate with top revenue-generating insurance providers for strategic partnerships.
+- Ensure sufficient supply of frequently prescribed medications to meet patient demand.
+- Align staff resources with patient admission trends to maintain quality care delivery.
+
